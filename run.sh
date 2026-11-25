@@ -1,5 +1,5 @@
 #!/bin/bash
 
 rm -f Dolus
-gcc Dolus.c -o Dolus
+gcc -O3 -march=native Dolus.c -o Dolus -lgcrypt
 ./Dolus
